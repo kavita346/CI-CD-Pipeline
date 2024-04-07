@@ -33,7 +33,7 @@ jobs:
 
       - name: Run Trivy and Convert to CSV
         run: |
-          trivy image archana --format table > image-trivy-scan.txt
+          trivy image sai40 --format table > image-trivy-scan.txt
           cat image-trivy-scan.txt
 
       - name: Install Docker Scout
